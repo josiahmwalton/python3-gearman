@@ -21,12 +21,14 @@ Installation
 
 Links
 =====
-* 3.x source <http://github.com/josiahmwalton/python3-gearman>
-* 3.x documentation <http://packages.python.org/python3-gearman/>
 
+Python 3
+* source <http://github.com/josiahmwalton/python3-gearman>
+* documentation <http://packages.python.org/python3-gearman/>
+
+Python2 and earlier
 * 2.x source <http://github.com/Yelp/python-gearman/>
 * 2.x documentation <http://packages.python.org/gearman/>
-
 * 1.x source <http://github.com/samuel/python-gearman/>
 * 1.x documentation <http://github.com/samuel/python-gearman/tree/master/docs/>
 
@@ -34,8 +36,9 @@ Contributing
 ===========
 
 Contributions are encouraged and welcome. In order for your changes to be incorporated, they
-need to follow the general process:
+need to follow the general guidelines:
+* Please do your work on a branch created from the `develop` branch (see the GitFlow approach to development)
 * Your build must past all PEP8 code style checks and unit tests
 * As new functionality is added, please write the corresponding unit tests
 * For passing builds, please submit a pull request (PR) to submit your
-  changes for inclusion
+  changes for inclusion into the `develop` branch
