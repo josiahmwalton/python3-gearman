@@ -1,0 +1,42 @@
+Python 3 Version Changes:
+
+v0.1.0, 2018-05-21 -- Major release for Python 3 compatibility, built off gearman v2.0.2
+ * Initial version number set to 0.1.0 (push to 1.0.0 will occur with stability)
+ * Re-style of necessary lines of code for PEP8 compliance
+ * Refactor of gearman --> python3_gearman
+ * python3-gearman/__init__.py - Update version number to 0.1.0
+ * GearmanClient - Prevent leak from rotating connection queue, decode bytes string
+ * GearmanClientCommandHandler - Update dict.itervalues() to dict.keys()
+ * python3-gearman/compat.py - Proper conversion to list type
+ * GearmanConnection - Proper byte literal handling, Exception statement syntax
+ * python3-gearman/protocol.py - Proper byte literal handling, update dict.itervalues() to dict.keys()
+ * python3-gearman/util.py - Exception statement syntax, added print statement and sys.exit()
+ * GearmanWorker - Proper conversion to list type, update dict.itervalues() to dict.keys()
+ * Update of all relevant tests for depreciated unittest functions and byte literal handling
+ * Removal of 1to2.rst sphinx doc file
+ * Update of sphinx conf.py file for Python 3 html documentation styling
+ * Inclusion of TravisCI configuration for automated building, testing, and deployment of tagged versions to PyPI
+
+Python 2 Version Changes:
+
+v2.0.X, 2012-XX-XX -- Major bug fix release
+ * GearmanWorker - Dispatch to the right function instead of looping
+ * GearmanClient - Let the server handle the special '-' unique [GH-18]
+ * GearmanClient - fix memory leak on brackground jobs [GH-10]
+ * GearmanWorker - add a after_job hook [GH-22]
+ * ConnectionManager - fix case where closed connections would still be polled [GHPR-25]
+ * 1to2 - fix wording mistakce [GHPR-23]
+ * Protocol - enforce no-nulls in non-last arguments [GHPR-26]
+
+v2.0.2, 2011-01-11 -- Major bug fix release
+ * GearmanClient - Fixed a memory leak in the handler where we never de-allocated completed jobs [GH-6]
+ * GearmanClient - Updated GET_STATUS to ask about a job that wasn't previously submitted [GH-1]
+ * Gearman library - Fixed logging errors when NullHandler wasn't provdied [GH-3]
+
+v2.0.1, 2010-10-12 -- Minor bug fix release
+ * GearmanJobRequest - Combined `server_status` and `status_updates` into a shared `status` field
+ * GearmanJobRequest.status - `numerator` and `denominator` are now cast to integers
+ * GearmanWorker.send_* - Updated to immediately send commands instead of waiting for the work select loop
+
+v2.0.0, 2010-09-28 -- Initial release
+v2.0.0.beta, 2010-06-15 -- Beta release
