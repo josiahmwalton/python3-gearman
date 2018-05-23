@@ -1,7 +1,3 @@
-==============
-python3_gearman
-==============
-
 Description
 ===========
 Python 3 Gearman API - Client, worker, and admin client interfaces
