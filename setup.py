@@ -17,6 +17,7 @@ setup(
     long_description_content_type="text/markdown",
     url='https://github.com/josiahmwalton/python3-gearman',
     packages=['python3_gearman'],
+    python_requires='>=3',
     license='Apache',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
