@@ -1,3 +1,22 @@
+<table>
+<tr>
+  <td>License</td>
+  <td>
+    <a href="https://github.com/josiahmwalton/python3-gearman/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="license" />
+    </a>
+</td>
+</tr>
+<tr>
+  <td>Build Status</td>
+  <td>
+    <a href="https://travis-ci.org/josiahmwalton/python3-gearman">
+    <img src="https://travis-ci.org/josiahmwalton/python3-gearman.svg?branch=master" alt="travis build status" />
+    </a>
+  </td>
+</tr>
+</table>
+
 Description
 ===========
 Python 3 Gearman API - Client, worker, and admin client interfaces
