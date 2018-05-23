@@ -26,7 +26,7 @@ Python 3
 * source <http://github.com/josiahmwalton/python3-gearman>
 * documentation <http://packages.python.org/python3-gearman/>
 
-Python2 and earlier
+Python 2 and earlier
 * 2.x source <http://github.com/Yelp/python-gearman/>
 * 2.x documentation <http://packages.python.org/gearman/>
 * 1.x source <http://github.com/samuel/python-gearman/>
