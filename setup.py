@@ -10,7 +10,9 @@ with open("README.md", "r") as fh:
 setup(
     name='python3_gearman',
     version=version,
-    description='Python 3 Gearman API - Client, worker, and admin client interfaces',
+    description=(
+        'Python 3 Gearman API - Client, worker, and admin client interfaces'
+    ),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/josiahmwalton/python3-gearman',
